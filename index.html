@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New York Times Article Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <h1>New York Times Article Search</h1>
+    <form action="search.php" method="get">
+      <label for="q">Search Query:</label>
+      <input type="text" name="q" id="q"><br>
+      <label for="begin_date">Begin Date (Format: YYYYMMDD):</label>
+      <input type="text" name="begin_date" id="begin_date"><br>
+      <label for="end_date">End Date (Format: YYYYMMDD):</label>
+      <input type="text" name="end_date" id="end_date"><br>
+      <label for="sort">Sort Order:</label>
+      <select name="sort" id="sort">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+        <option value="relevance">Relevance</option>
+      </select><br>
+      <input type="submit" value="Search">
+    </form>
+  </body>
+</html>
